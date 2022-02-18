@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class test2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        final String allowedN = "[0-9]+";
-        final String allowedLp = "[a-z]+";
-        final String allowedLg = "[A-Z]+";
-        final String required = "^(?:(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).*)$";
+        final String requiredN = "[0-9]+";
+        final String requiredLp = "[a-z]+";
+        final String requiredLg = "[A-Z]+";
+        final String requiredS = "^(?=.*[!@#$%^&*()-+\"])";
         String passwd;
 
         int validation1 = 0;
@@ -29,39 +29,38 @@ public class test2 {
 
 
 
-        if(passwd.length() >=6 && passwd.length() <=10){validation1 = 1;} else {validation1 = 2;}
-        if(passwd.matches(allowedN)){validation2 = 3;} else {validation2 = 4;}
-        //if(passwd.matches(allowedLp)){validation3 = 5;} else {validation3 = 6;}
-        //if(passwd.matches(allowedLg)){validation4 = 7;} else {validation4 = 8;}
-        //if(passwd.matches(required)){validation5 = 9;} else {validation5 = 10;}
+        if(passwd.length() >=6 && passwd.length() <=10){validation1 = 0;} else {validation1 = 1;}
+        if(passwd.replaceAll("[^0-9]", "").matches(requiredN)){validation2 = 0;} else {validation2 = 1;}
+        if(passwd.replaceAll("[^a-z]", "").matches(requiredLp)){validation3 = 0;} else {validation3 = 1;}
+        if(passwd.replaceAll("[^A-Z]", "").matches(requiredLg)){validation4 = 0;} else {validation4 = 1;}
+        if(passwd.matches(requiredS)){validation5 = 0;} else {validation5 = 1;}
 
             switch (validation1) {
-                case 2:
+                case 1:
                     System.out.println("*Deve possui no mínimo 6 caracteres.");
                 default:
         }
             switch (validation2) {
-                case 4:
+                case 1:
                     System.out.println("*Contém no mínimo 1 digito.");
                 default:
         }
-        /*    switch (validation3){
-                case 0:
+            switch (validation3){
+                case 1:
                     System.out.println("*Contém no mínimo 1 letra em minúsculo.");
                 default:
         }
             switch (validation4){
-                case 0:
+                case 1:
                     System.out.println("*Contém no mínimo 1 letra em maiúsculo.");
                 default:
         }
             switch (validation5){
-                case 0:
+                case 1:
                     System.out.println("*Contém no mínimo 1 caractere especial: !@#$%^&*()-+");
                 default:
                 }
 
-*/
             System.out.println("Digite Novamente:");
 // break;
         }

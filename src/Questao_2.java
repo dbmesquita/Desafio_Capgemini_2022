@@ -15,6 +15,7 @@ public class Questao_2 {
         int validation4 = 0;
         int validation5 = 0;
         int validation = 0;
+        int breaking = 0;
 
         System.out.println("\n");
         System.out.println("Sua Senha precisar ser forte!");
@@ -61,6 +62,11 @@ public class Questao_2 {
                 validation = 1;
             }
 
+            if (validation == 0) {
+                breaking = 1;
+            } else {
+                breaking = 0;
+            }
 
             switch (validation) {
                 case 0:
@@ -69,7 +75,7 @@ public class Questao_2 {
             }
 
 
-            while (validation ==1 ){
+            while (validation == 1) {
 
                 switch (validation) {
                     case 1:
@@ -102,13 +108,13 @@ public class Questao_2 {
                         System.out.println("*Contém no mínimo 1 caractere especial: !@#$%^&*()-+");
                     default:
                 }
-                validation =0;
+                validation = 0;
 
                 System.out.println("Digite uma senha novamente:");
             }
-
+            if (breaking == 1) {
+                break;
+            }
         }
-
     }
-
 }

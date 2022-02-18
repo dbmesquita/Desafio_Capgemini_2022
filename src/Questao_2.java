@@ -6,7 +6,8 @@ public class Questao_2 {
         final String requiredN = "[0-9]+";
         final String requiredLp = "[a-z]+";
         final String requiredLg = "[A-Z]+";
-        final String requiredS = "^(?=.*[!@#$%^&*()-+\"])";
+        final String requiredS = "[}{,.^@#$%&()?~=+\\-_\\/*\\-+.\\|]+";
+        //final String requiredS = "(?=.*[}{,.^@#$%&()?~=+\\-_\\/*\\-+.\\|])(?=.*[a-zA-Z])(?=.*[0-9]).{6,}";
         String passwd;
 
         int validation1 = 0;
@@ -16,7 +17,7 @@ public class Questao_2 {
         int validation5 = 0;
 
         System.out.println("Sua Senha precisar ser forte!:");
-        System.out.println("*Deve possui no mínimo 6 caracteres.");
+        System.out.println("*Deve possui entre 6 à 8 caracteres.");
         System.out.println("*Contém no mínimo 1 digito.");
         System.out.println("*Contém no mínimo 1 letra em minúsculo.");
         System.out.println("*Contém no mínimo 1 letra em maiúsculo.");
@@ -28,7 +29,7 @@ public class Questao_2 {
             passwd = input.nextLine();
 
 
-            if (passwd.length() >= 6 && passwd.length() <= 10) {
+            if (passwd.length() >= 6 && passwd.length() <= 8) {
                 validation1 = 0;
             } else {
                 validation1 = 1;
@@ -48,12 +49,11 @@ public class Questao_2 {
             } else {
                 validation4 = 1;
             }
-            if (passwd.matches(requiredS)) {
+            if (passwd.replaceAll("^[}{,.^@#$%&()?~=+\\-_\\/*\\-+.\\|]", "").matches(requiredS)) {
                 validation5 = 0;
             } else {
                 validation5 = 1;
             }
-
             switch (validation1) {
                 case 1:
                     System.out.println("*Deve possui no mínimo 6 caracteres.");

@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Questao_2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -18,8 +17,8 @@ public class Questao_2 {
         int breaking = 0;
 
         System.out.println("\n");
-        System.out.println("Sua Senha precisar ser forte!");
-        System.out.println("Nela deve conter:");
+        System.out.println("Duda sua Senha precisar ser forte!");
+        System.out.println("Nela deverá conter:");
         System.out.println("*No mínimo 6 caracteres.");
         System.out.println("*No mínimo 1 digito.");
         System.out.println("*No mínimo 1 letra em minúsculo.");
@@ -95,17 +94,17 @@ public class Questao_2 {
                 }
                 switch (validation3) {
                     case 1:
-                        System.out.println("*Contém no mínimo 1 letra em minúsculo.");
+                        System.out.println("*Conter no mínimo 1 letra em minúsculo.");
                     default:
                 }
                 switch (validation4) {
                     case 1:
-                        System.out.println("*Contém no mínimo 1 letra em maiúsculo.");
+                        System.out.println("*Conter no mínimo 1 letra em maiúsculo.");
                     default:
                 }
                 switch (validation5) {
                     case 1:
-                        System.out.println("*Contém no mínimo 1 caractere especial: !@#$%^&*()-+");
+                        System.out.println("*Conter no mínimo 1 caractere especial: !@#$%^&*()-+");
                     default:
                 }
                 validation = 0;

@@ -8,7 +8,7 @@ public class Questao_1 {
         String s = " "; //carater " " para cria escada
 
         //iniciando um laço
-        for(int i = c; i >= 0; i--) {
+        for (int i = c; i >= 0; i--) {
 
             int e = n - i; // subtraindo tam. da escada pelo indice mutavel para criacao da escada
 
@@ -17,7 +17,7 @@ public class Questao_1 {
             String result2 = new String(new char[e]).replace("\0", a);
 
             //imprimi o resultado
-            System.out.println(result1+result2);
+            System.out.println(result1 + result2);
         }
     }
 }

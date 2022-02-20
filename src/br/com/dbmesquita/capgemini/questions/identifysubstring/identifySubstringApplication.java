@@ -1,35 +1,23 @@
 package br.com.dbmesquita.capgemini.questions.identifysubstring;
 
-import java.util.Arrays;
-import java.util.HashMap;
-//import java.util.Scanner;
+import br.com.dbmesquita.capgemini.questions.identifysubstring.identifySubstringMethod;
+import javax.swing.JOptionPane;
+
 public class identifySubstringApplication {
+
     public static void main(String[] args) {
-        //Scanner input = new Scanner(System.in);
+        identifySubstringMethod pair = new identifySubstringMethod();
 
-        subString("xyyx");
-        ///subString = input.nextLine();
-    }
+        String word = JOptionPane.showInputDialog("Digite uma palavra:");
 
-    static void subString(String s) {
-        HashMap<String, Integer> map = new HashMap<>();
-
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = i; j < s.length(); j++) {
-                char[] valC = s.substring(i, j + 1).toCharArray();
-                Arrays.sort(valC);
-                String val = new String(valC);
-                if (map.containsKey(val))
-                    map.put(val, map.get(val) + 1);
-                else
-                    map.put(val, 1);
+        if(pair.countSubsrtring(word) == 1) {
+            System.out.println("Encontrado "+pair.countSubsrtring(word)+" anagrama.");
+        } else if(pair.countSubsrtring(word) > 1){
+            System.out.println("Encontrados "+pair.countSubsrtring(word)+" anagramas.");
+        } else {
+            if (pair.countSubsrtring(word) ==0){
+                System.out.println("Nenhum anagrama encontrado!");
             }
         }
-        int anagramPairCount = 0;
-        for (String key : map.keySet()) {
-            int n = map.get(key);
-            anagramPairCount += (n * (n - 1)) / 2;
-        }
-        System.out.println(anagramPairCount);
     }
 }

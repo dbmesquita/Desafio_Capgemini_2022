@@ -17,7 +17,7 @@ public class Questao_2 {
         int breaking = 0;
 
         System.out.println("\n");
-        System.out.println("Duda sua Senha precisar ser forte!");
+        System.out.println("Sua Senha precisar ser forte!");
         System.out.println("Nela deverá conter:");
         System.out.println("*No mínimo 6 caracteres.");
         System.out.println("*No mínimo 1 digito.");

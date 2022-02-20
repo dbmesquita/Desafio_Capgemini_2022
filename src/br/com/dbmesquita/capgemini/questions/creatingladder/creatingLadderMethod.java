@@ -1,7 +1,5 @@
 package br.com.dbmesquita.capgemini.questions.creatingladder;
 
-import javax.swing.*;
-
 public class creatingLadderMethod {
     public void ladderBuilding(Integer sizeLadder) {
 

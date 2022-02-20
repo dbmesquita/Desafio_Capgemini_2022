@@ -1,7 +1,9 @@
+package br.com.dbmesquita.capgemini.questions.identifysubstring;
+
 import java.util.Arrays;
 import java.util.HashMap;
 //import java.util.Scanner;
-public class Questao_3 {
+public class identifySubstringApplication {
     public static void main(String[] args) {
         //Scanner input = new Scanner(System.in);
 

@@ -1,5 +1,7 @@
+package br.com.dbmesquita.capgemini.questions.checkingpassword;
+
 import java.util.Scanner;
-public class Questao_2 {
+public class checkingPasswordApplication {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         final String requiredN = "[0-9]+";

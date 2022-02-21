@@ -15,7 +15,7 @@ public class checkingPasswordApplication {
                 "\nDigite sua senha abaixo:"
         );
 
-       checkingPassword.passwordBuilding(passwd);
+        checkingPassword.passwordBuilding(passwd);
 
     }
 }

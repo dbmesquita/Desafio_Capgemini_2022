@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class checkingPasswordMethod {
     
-	public void passwordBuilding(String passwd){
+	public  void passwordBuilding(String passwd){
         @SuppressWarnings("resource")
 		Scanner input = new Scanner(passwd);
 
@@ -69,7 +69,7 @@ public class checkingPasswordMethod {
 
             switch (validation) {
                 case 0:
-                    System.out.println("Senha valida e cadastrada!");
+                   /// System.out.println("Senha valida e cadastrada!");
                 default:
             }
 
@@ -78,44 +78,45 @@ public class checkingPasswordMethod {
 
                 switch (sizePasswd) {
                     case 1:
-                        System.out.println("Faltando "+(6 - passwd.length())+" digito!");
+                        System.out.println(6 - passwd.length());
+                        //System.out.println("Faltando "+(6 - passwd.length())+" digito!");
                     default:
                 }
 
                 switch (validation) {
                     case 1:
-                        System.out.println("Abaixo alguns criterios \npara ser uma senha forte!\n");
+                       // System.out.println("Abaixo alguns criterios \npara ser uma senha forte!\n");
                     default:
                 }
 
                 switch (validation1) {
                     case 1:
-                        System.out.println("*Deve possuir no mínimo 6 caracteres.");
+                        //System.out.println("*Deve possuir no mínimo 6 caracteres.");
                     default:
                 }
                 switch (validation2) {
                     case 1:
-                        System.out.println("*Conter no mínimo 1 digito.");
+                      //  System.out.println("*Conter no mínimo 1 digito.");
                     default:
                 }
                 switch (validation3) {
                     case 1:
-                        System.out.println("*Conter no mínimo 1 letra em minúsculo.");
+                       // System.out.println("*Conter no mínimo 1 letra em minúsculo.");
                     default:
                 }
                 switch (validation4) {
                     case 1:
-                        System.out.println("*Conter no mínimo 1 letra em maiúsculo.");
+                       // System.out.println("*Conter no mínimo 1 letra em maiúsculo.");
                     default:
                 }
                 switch (validation5) {
                     case 1:
-                        System.out.println("*Conter no mínimo 1 caractere especial: !@#$%^&*()-+");
+                        //System.out.println("*Conter no mínimo 1 caractere especial: !@#$%^&*()-+");
                     default:
                 }
                 validation = 0;
 
-                System.out.println("Digite uma senha novamente:");
+                //System.out.println("Digite uma senha novamente:");
             }
             if (breaking == 1) {
                 break;

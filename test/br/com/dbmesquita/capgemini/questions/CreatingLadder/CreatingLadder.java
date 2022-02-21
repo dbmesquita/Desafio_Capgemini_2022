@@ -2,28 +2,26 @@ package br.com.dbmesquita.capgemini.questions.CreatingLadder;
 
 
 import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
+import br.com.dbmesquita.capgemini.questions.CreatingLadder.creatingLadderMethod.*;
 
 class CreatingLadder {
 
 	@Test
 	void shouldLadderBuildingReturnOne() throws Exception {
 		creatingLadderMethod creatingLadder = new creatingLadderMethod();
-		String text = tapSystemOut(()->{
-			creatingLadder.ladderBuilding(1);
-		});
-		Assertions.assertEquals("*", text.trim());
+		Assertions.assertEquals("  *\n **\n***", creatingLadder);
+		
 	}
 
 
-	@Test
+	/*@Test
 	void shouldLadderBuildingReturnNothing() throws Exception {
 		creatingLadderMethod creatingLadder = new creatingLadderMethod();
 		String text = tapSystemOut(()->{
 			creatingLadder.ladderBuilding(0);
 		});
 		Assertions.assertEquals("", text.trim());
-
-
-	}
+	}*/
+}

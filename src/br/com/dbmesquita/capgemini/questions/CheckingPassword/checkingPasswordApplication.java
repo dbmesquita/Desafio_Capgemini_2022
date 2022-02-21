@@ -1,4 +1,4 @@
-package br.com.dbmesquita.capgemini.questions.checkingpassword;
+package br.com.dbmesquita.capgemini.questions.CheckingPassword;
 
 import javax.swing.*;
 
@@ -15,7 +15,7 @@ public class checkingPasswordApplication {
                 "\nDigite sua senha abaixo:"
         );
 
-       checkingPassword.PasswordBuilding(passwd);
+       checkingPassword.passwordBuilding(passwd);
 
     }
 }

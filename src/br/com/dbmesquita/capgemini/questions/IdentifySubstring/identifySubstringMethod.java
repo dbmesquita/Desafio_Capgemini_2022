@@ -1,4 +1,4 @@
-package br.com.dbmesquita.capgemini.questions.identifysubstring;
+package br.com.dbmesquita.capgemini.questions.IdentifySubstring;
 
 import java.util.Arrays;
 import java.util.HashMap;

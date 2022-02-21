@@ -1,10 +1,12 @@
-package br.com.dbmesquita.capgemini.questions.checkingpassword;
+package br.com.dbmesquita.capgemini.questions.CheckingPassword;
 
 import java.util.Scanner;
 
 public class checkingPasswordMethod {
-    public void PasswordBuilding(String passwd){
-        Scanner input = new Scanner(passwd);
+    
+	public void passwordBuilding(String passwd){
+        @SuppressWarnings("resource")
+		Scanner input = new Scanner(passwd);
 
         final String requiredN = "[0-9]+";
         final String requiredLp = "[a-z]+";

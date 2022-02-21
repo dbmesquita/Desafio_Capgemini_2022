@@ -1,6 +1,5 @@
-package br.com.dbmesquita.capgemini.questions.identifysubstring;
+package br.com.dbmesquita.capgemini.questions.IdentifySubstring;
 
-import br.com.dbmesquita.capgemini.questions.identifysubstring.identifySubstringMethod;
 import javax.swing.JOptionPane;
 
 public class identifySubstringApplication {

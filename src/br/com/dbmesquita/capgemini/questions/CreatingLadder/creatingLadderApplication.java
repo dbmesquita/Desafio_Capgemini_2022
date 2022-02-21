@@ -1,5 +1,4 @@
-package br.com.dbmesquita.capgemini.questions.creatingladder;
-import br.com.dbmesquita.capgemini.questions.creatingladder.creatingLadderMethod;
+package br.com.dbmesquita.capgemini.questions.CreatingLadder;
 import javax.swing.JOptionPane;
 
 public class creatingLadderApplication {

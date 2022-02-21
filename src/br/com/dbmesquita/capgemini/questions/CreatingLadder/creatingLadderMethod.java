@@ -1,4 +1,4 @@
-package br.com.dbmesquita.capgemini.questions.creatingladder;
+package br.com.dbmesquita.capgemini.questions.CreatingLadder;
 
 public class creatingLadderMethod {
     public void ladderBuilding(Integer sizeLadder) {
